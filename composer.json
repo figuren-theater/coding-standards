@@ -1,6 +1,6 @@
 {
 	"name": "figuren-theater/coding-standards",
-	"description": "... like the figuren.theater WordPress Multisite network.",
+	"description": "Coding standards for PHP, JavaScript and CSS within the figuren.theater WordPress Multisite network.",
     "homepage": "https://websites.fuer.figuren.theater",
     "type": "library",
     "keywords": ["wordpress", "coding-standards", "wpcs"],

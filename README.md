@@ -8,7 +8,7 @@
   <h1 align="center">figuren.theater | coding_standards</h1>
 
   <p align="center">
-    ... like the WordPress Multisite network for puppeteers - <a href="https://figuren.theater">figuren.theater</a>.
+    Coding standards for PHP, JavaScript and CSS within the WordPress Multisite network for puppeteers - <a href="https://figuren.theater">figuren.theater</a>.
     <br /><br /><br />
     <a href="https://meta.figuren.theater/blog"><strong>Read our blog</strong></a>
     <br />
