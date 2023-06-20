@@ -2,8 +2,8 @@
 	"name": "figuren-theater/coding-standards",
 	"description": "... like the figuren.theater WordPress Multisite network.",
     "homepage": "https://websites.fuer.figuren.theater",
-    "type": "wordpress-muplugin",
-    "keywords": ["wordpress", "wordpress-muplugin"],
+    "type": "library",
+    "keywords": ["wordpress", "coding-standards", "wpcs"],
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -21,43 +21,5 @@
         "email": "info@figuren.theater",
         "issues": "https://github.com/figuren-theater/coding-standards/issues",
         "source": "https://github.com/figuren-theater/coding-standards"
-    },
-	"autoload": {
-		"files": [
-			"inc/.../namespace.php",
-			"inc/namespace.php"
-		],
-        "classmap": [
-            "inc/"
-        ]
-	},
-	"repositories": [
-		{
-            "type": "git",
-            "url": "https://github.com/figuren-theater/ft-options"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/..."
-        },
-		{
-			"type": "composer",
-			"url" : "https://wpackagist.org"
-		}
-	],
-	"require": {
-        "php": ">=7.1",
-        "figuren-theater/ft-options": "^1"
-	},
-    "extra": {
-        "altis": {
-            "install-overrides": [
-            ]
-        }
-    },
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true
-		}
-	}
+    }
 }
