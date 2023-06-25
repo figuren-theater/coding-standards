@@ -4,6 +4,10 @@
 
 	<file>.</file>
 
+	<exclude-pattern>*/bin/*</exclude-pattern>
+	<exclude-pattern>*/tests/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
 	<!-- Set a minimum PHP version for PHPCompatibility-->
 	<config name="testVersion" value="7.1-"/>
 
@@ -25,7 +29,10 @@
 		</properties>
 	</rule>
 
-	<exclude-pattern>*/bin/*</exclude-pattern>
-	<exclude-pattern>*/tests/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<!-- Prevent deprecation notice when the sniff is not explicitely included. -->
+	<!-- 11.11.2019: 2.2.0: "The deprecated sniff will be removed in WPCS 3.0.0." ;) -->
+	<rule ref="WordPress.WP.TimezoneChange.DeprecatedSniff">
+		<severity>0</severity>
+	</rule>
+
 </ruleset>
