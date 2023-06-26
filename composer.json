@@ -1,33 +1,39 @@
 {
 	"name": "figuren-theater/coding-standards",
 	"description": "Coding standards for PHP, JavaScript and CSS within the figuren.theater WordPress Multisite network.",
-  "homepage": "https://websites.fuer.figuren.theater",
-  "type": "phpcodesniffer-standard",
-  "keywords": ["wordpress", "coding-standards", "wpcs"],
-  "license": "GPL-3.0-or-later",
-  "authors": [
-      {
-          "name": "figuren.theater",
-          "email": "info@figuren.theater"
-      },
-      {
-          "name": "Carsten Bach",
-          "email": "mail@carsten-bach.de",
-          "homepage": "https://carsten-bach.de",
-          "role": "Developer"
-      }
-  ],
-  "support": {
-      "email": "info@figuren.theater",
-      "issues": "https://github.com/figuren-theater/coding-standards/issues",
-      "source": "https://github.com/figuren-theater/coding-standards"
-  },
+	"license": "GPL-3.0-or-later",
+	"type": "phpcodesniffer-standard",
+	"keywords": [
+		"wordpress",
+		"coding-standards",
+		"wpcs"
+	],
+	"authors": [
+		{
+			"name": "figuren.theater",
+			"email": "info@figuren.theater"
+		},
+		{
+			"name": "Carsten Bach",
+			"email": "mail@carsten-bach.de",
+			"homepage": "https://carsten-bach.de",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://websites.fuer.figuren.theater",
+	"support": {
+		"email": "info@figuren.theater",
+		"issues": "https://github.com/figuren-theater/coding-standards/issues",
+		"source": "https://github.com/figuren-theater/coding-standards"
+	},
 	"require": {
+		"ergebnis/composer-normalize": "^2.31",
 		"humanmade/coding-standards": "^1.2"
 	},
 	"config": {
 		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"ergebnis/composer-normalize": true
 		}
 	}
 }

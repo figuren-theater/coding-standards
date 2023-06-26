@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="ft-core">
+<ruleset name="figurentheater">
 	<description>Coding standards for figuren.theater</description>
 
 	<file>.</file>
