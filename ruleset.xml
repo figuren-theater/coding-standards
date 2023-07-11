@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="figurentheater">
+
+	<description>Proxy to the actual figurentheater coding standards.</description>
+
+	<rule ref="vendor/figuren-theater/coding-standards/figurentheater/ruleset.xml" />
+
+</ruleset>
