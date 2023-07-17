@@ -5,7 +5,7 @@
     <img src="https://raw.githubusercontent.com/figuren-theater/logos/main/favicon.png" alt="figuren.theater Logo" width="100" height="100">
   </a>
 
-  <h1 align="center">figuren.theater | coding_standards</h1>
+  <h1 align="center">figuren.theater | coding-standards</h1>
 
   <p align="center">
     Coding standards for PHP, JavaScript and CSS within the WordPress Multisite network for puppeteers - <a href="https://figuren.theater">figuren.theater</a>.
@@ -27,7 +27,7 @@
 This is the long desc
 
 * [x] *list closed tracking-issues or `docs` files here*
-* [ ] Do you have any [ideas](/issues/new) ?
+* [ ] Do you have any [ideas](https://github.com/figuren-theater/coding-standards/issues/new) ?
 
 ## Background & Motivation
 
@@ -35,42 +35,11 @@ This is the long desc
 
 ## Install
 
-1. Add this repository to your `composer.json`
-```json
-"repositories": [
-    {
-        "type": "git",
-        "url": "https://github.com/figuren-theater/coding-standards"
-    }
-]
-```
+1. Install via command line
+	```sh
+	composer require figuren-theater/coding-standards
+	```
 
-2. Install via command line
-```sh
-composer require figuren-theater/coding-standards
-```
-
-## Usage
-
-### API
-
-```php
-Figuren_Theater::API\get_...()
-```
-
-### Plugins included
-
-This package contains the following plugins. 
-Thoose are completely managed by code and lack of their typical UI.
-
-* ...
-
-
-### What does this package do in addition?
-
-Accompaniying the core functionality of the mentioned plugins, theese **best practices** are included with this package.
-
-* ...
 
 
 ## Built with & uses
@@ -95,18 +64,18 @@ Don't forget to give the project a star! Thanks again!
 ## Versioning
 
 We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this repository](/tags).
+available, see the [tags on this repository](https://github.com/figuren-theater/coding-standards/tags).
 
 ## Authors
 
   - **Carsten Bach** - *Provided idea & code* - [figuren.theater/crew](https://figuren.theater/crew/)
 
-See also the list of [contributors](/contributors)
+See also the list of [contributors](https://github.com/figuren-theater/coding-standards/contributors)
 who participated in this project.
 
 ## License
 
-This project is licensed under the [GPL-3.0-or-later](LICENSE.md), see the [LICENSE](LICENSE) file for
+This project is licensed under the **GPL-3.0-or-later**, see the [LICENSE](/LICENSE) file for
 details
 
 ## Acknowledgments

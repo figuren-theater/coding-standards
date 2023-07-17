@@ -2,8 +2,6 @@
 <ruleset name="figurentheater">
 	<description>Coding standards for figuren.theater</description>
 
-	<file>.</file>
-
 	<exclude-pattern>*/bin/*</exclude-pattern>
 	<exclude-pattern>*/tests/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
@@ -27,6 +25,11 @@
 				<element value="figurentheater"/>
 			</property>
 		</properties>
+	</rule>
+
+	<!-- Allow backslashes in hook names -->
+	<rule ref="WordPress.NamingConventions.ValidHookName">
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
 	</rule>
 
 	<!-- Prevent deprecation notice when the sniff is not explicitely included. -->
