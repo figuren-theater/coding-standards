@@ -27,6 +27,11 @@
 		</properties>
 	</rule>
 
+	<!-- Allow backslashes in hook names -->
+	<rule ref="WordPress.NamingConventions.ValidHookName">
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
+	</rule>
+
 	<!-- Prevent deprecation notice when the sniff is not explicitely included. -->
 	<!-- 11.11.2019: 2.2.0: "The deprecated sniff will be removed in WPCS 3.0.0." ;) -->
 	<rule ref="WordPress.WP.TimezoneChange.DeprecatedSniff">
