@@ -8,7 +8,7 @@
   <h1 align="center">figuren.theater | coding-standards</h1>
 
   <p align="center">
-    Coding standards for PHP, JavaScript and CSS within the WordPress Multisite network for puppeteers - <a href="https://figuren.theater">figuren.theater</a>.
+    Coding standards for PHP, <s title="Not yet">JavaScript and CSS</s> within the WordPress Multisite network for puppeteers - <a href="https://figuren.theater">figuren.theater</a>.
     <br /><br /><br />
     <a href="https://meta.figuren.theater/blog"><strong>Read our blog</strong></a>
     <br />
@@ -45,7 +45,13 @@ This is the long desc
 ## Built with & uses
 
   - [dependabot](/.github/dependabot.yml)
-  - ....
+  - [humanmade/coding-standards](https://github.com/humanmade/coding-standards)
+     Human Made coding standards for modern code.
+  - [WordPress/WordPress-Coding-Standards](https://github.com/WordPress/WordPress-Coding-Standards)
+     PHP\_CodeSniffer rules (sniffs) to enforce WordPress coding conventions.
+  - [Automattic/VIP-Coding-Standards](https://github.com/Automattic/VIP-Coding-Standards)
+     PHP\_CodeSniffer ruleset to enforce WordPress VIP coding standards.
+
 
 ## Contributing
 
