@@ -7,7 +7,7 @@
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
 	<!-- Set a minimum PHP version for PHPCompatibility-->
-	<config name="testVersion" value="7.1-"/>
+	<config name="testVersion" value="7.4-"/>
 
 	<!-- Use HM Coding Standards -->
 	<rule ref="HM" />
