@@ -35,8 +35,16 @@
 	<rule ref="WordPress-Core">
 		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
-		<exclude name="WordPress.PHP.DisallowShortTernary" />
 	</rule>
+
+	<rule ref="Universal">
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Universal.Namespaces.EnforceCurlyBraceSyntax" />
+		<exclude name="Universal.UseStatements.DisallowUseClass.FoundWithoutAlias" />
+		<exclude name="Universal.UseStatements.DisallowUseClass.FromGlobalNamespace" />
+		<exclude name="Universal.UseStatements.DisallowUseFunction.FromGlobalNamespace" />
+	</rule>
+	
 	<rule ref="WordPress-Docs" />
 	<rule ref="WordPress-Extra" />
 
@@ -64,12 +72,6 @@
 	<!-- Allow backslashes in hook names -->
 	<rule ref="WordPress.NamingConventions.ValidHookName">
 		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
-	</rule>
-
-	<!-- Prevent deprecation notice when the sniff is not explicitely included. -->
-	<!-- 11.11.2019: 2.2.0: "The deprecated sniff will be removed in WPCS 3.0.0." ;) -->
-	<rule ref="WordPress.WP.TimezoneChange.DeprecatedSniff">
-		<severity>0</severity>
 	</rule>
 
 </ruleset>
