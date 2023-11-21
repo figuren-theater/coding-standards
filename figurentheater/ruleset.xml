@@ -20,8 +20,8 @@
 	<rule ref="PHPCompatibilityWP"/>
 
 	<!-- Rules: Humanmade Coding Standards -->
-	<!-- https://github.com/humanmade/coding-standards -->
-	<rule ref="HM" />
+	<!-- https://github.com/humanmade/coding-standards
+	<rule ref="HM" /> -->
 
 	<!-- Rules: WordPress VIP Coding Standards -->
 	<!-- https://github.com/Automattic/VIP-Coding-Standards -->

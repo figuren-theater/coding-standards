@@ -28,8 +28,7 @@
 		"source": "https://github.com/figuren-theater/coding-standards"
 	},
 	"require": {
-		"ergebnis/composer-normalize": "^2.31",
-		"humanmade/coding-standards": "^1.2"
+		"ergebnis/composer-normalize": "^2.31"
 	},
 	"config": {
 		"allow-plugins": {
