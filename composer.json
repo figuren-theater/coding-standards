@@ -29,7 +29,8 @@
 	},
 	"require": {
 		"automattic/vipwpcs": "^3.0",
-		"ergebnis/composer-normalize": "^2.31"
+		"ergebnis/composer-normalize": "^2.31",
+		"phpcompatibility/phpcompatibility-wp": "*"
 	},
 	"config": {
 		"allow-plugins": {
