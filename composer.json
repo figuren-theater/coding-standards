@@ -28,7 +28,8 @@
 		"source": "https://github.com/figuren-theater/coding-standards"
 	},
 	"require": {
-		"ergebnis/composer-normalize": "^2.31"
+		"ergebnis/composer-normalize": "^2.31",
+		"automattic/vipwpcs": "^3.0"
 	},
 	"config": {
 		"allow-plugins": {
