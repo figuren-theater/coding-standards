@@ -3,27 +3,61 @@
 	<description>Coding standards for figuren.theater</description>
 
 	<exclude-pattern>*/bin/*</exclude-pattern>
-	<exclude-pattern>*/tests/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
-	<!-- Set a minimum PHP version for PHPCompatibility-->
-	<config name="testVersion" value="7.4-"/>
+	<!-- How to scan -->
+	<!-- Usage instructions: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
+	<!-- Annotated ruleset: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+	<arg name="colors"/>
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="20"/><!-- Enables parallel processing when available for faster results. -->
 
-	<!-- Use HM Coding Standards -->
+	<!-- Rules: Check PHP version compatibility -->
+	<!-- https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
+	<config name="testVersion" value="8.0-"/>
+	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+	<rule ref="PHPCompatibilityWP"/>
+
+	<!-- Rules: Humanmade Coding Standards -->
+	<!-- https://github.com/humanmade/coding-standards -->
 	<rule ref="HM" />
 
-	<rule ref="WordPress-Docs" />
+	<!-- Rules: WordPress VIP Coding Standards -->
+	<!-- https://github.com/Automattic/VIP-Coding-Standards -->
 	<rule ref="WordPressVIPMinimum" />
-<!--
-	<rule ref="WordPress-Extra" />
+
+	<!-- Rules: WordPress Coding Standards -->
+	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
+	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
+	<config name="minimum_supported_wp_version" value="6.3"/>
 	<rule ref="WordPress" />
- -->
+	<rule ref="WordPress-Core">
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+		<exclude name="WordPress.PHP.DisallowShortTernary" />
+	</rule>
+	<rule ref="WordPress-Docs" />
+	<rule ref="WordPress-Extra" />
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
 				<element value="figurentheater"/>
+				<element value="default"/>
 			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="ft_"/>
+				<element value="FT_"/>
+				<element value="Figuren_Theater"/>
+				<element value="__NAMESPACE__"/>
+			</property>
+
 		</properties>
 	</rule>
 
