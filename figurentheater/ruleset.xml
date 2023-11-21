@@ -74,4 +74,8 @@
 		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
 	</rule>
 
+	<!-- Rules: Cognitive Complexity metric by SonarSource -->
+	<!-- https://github.com/Rarst/phpcs-cognitive-complexity -->
+	<rule ref="CognitiveComplexity"/>
+
 </ruleset>

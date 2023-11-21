@@ -30,7 +30,8 @@
 	"require": {
 		"automattic/vipwpcs": "^3.0",
 		"ergebnis/composer-normalize": "^2.31",
-		"phpcompatibility/phpcompatibility-wp": "*"
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"rarst/phpcs-cognitive-complexity": "^0.2.0"
 	},
 	"config": {
 		"allow-plugins": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38320ab5f9a18f0a7208750209b86da2",
+    "content-hash": "109bd8d29341ce60e173f03fb7ef4be2",
     "packages": [
         {
             "name": "automattic/vipwpcs",
@@ -969,6 +969,52 @@
                 "source": "https://github.com/PHPCSStandards/PHPCSUtils"
             },
             "time": "2023-07-16T21:39:41+00:00"
+        },
+        {
+            "name": "rarst/phpcs-cognitive-complexity",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rarst/phpcs-cognitive-complexity.git",
+                "reference": "b903498ba13b12cff037315a3b09ec67714b3a1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rarst/phpcs-cognitive-complexity/zipball/b903498ba13b12cff037315a3b09ec67714b3a1d",
+                "reference": "b903498ba13b12cff037315a3b09ec67714b3a1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "pds/skeleton": "^1.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "dealerdirect/phpcodesniffer-composer-installer": "Installer plugin for automatic standard registration."
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Savchenko",
+                    "homepage": "https://www.Rarst.net/"
+                }
+            ],
+            "description": "Cognitive complexity implementation for PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://github.com/Rarst/phpcs-cognitive-complexity/issues",
+                "source": "https://github.com/Rarst/phpcs-cognitive-complexity"
+            },
+            "time": "2019-12-24T14:23:35+00:00"
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
