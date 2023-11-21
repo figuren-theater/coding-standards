@@ -28,8 +28,9 @@
 		"source": "https://github.com/figuren-theater/coding-standards"
 	},
 	"require": {
+		"automattic/vipwpcs": "^3.0",
 		"ergebnis/composer-normalize": "^2.31",
-		"humanmade/coding-standards": "^1.2"
+		"phpcompatibility/phpcompatibility-wp": "*"
 	},
 	"config": {
 		"allow-plugins": {
