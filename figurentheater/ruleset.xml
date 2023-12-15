@@ -12,6 +12,7 @@
 	<arg name="colors"/>
 	<arg name="extensions" value="php"/>
 	<arg name="parallel" value="20"/><!-- Enables parallel processing when available for faster results. -->
+	<arg value="s"/>
 
 	<!-- Rules: Check PHP version compatibility -->
 	<!-- https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
@@ -39,6 +40,7 @@
 
 	<rule ref="Universal">
 		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Universal.ControlStructures.IfElseDeclaration.NoNewLine" />
 		<exclude name="Universal.Namespaces.EnforceCurlyBraceSyntax" />
 		<exclude name="Universal.UseStatements.DisallowUseClass.FoundWithoutAlias" />
 		<exclude name="Universal.UseStatements.DisallowUseClass.FromGlobalNamespace" />
