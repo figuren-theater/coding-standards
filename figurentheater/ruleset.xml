@@ -39,6 +39,7 @@
 
 	<rule ref="Universal">
 		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Universal.ControlStructures.IfElseDeclaration.NoNewLine" />
 		<exclude name="Universal.Namespaces.EnforceCurlyBraceSyntax" />
 		<exclude name="Universal.UseStatements.DisallowUseClass.FoundWithoutAlias" />
 		<exclude name="Universal.UseStatements.DisallowUseClass.FromGlobalNamespace" />
