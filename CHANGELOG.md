@@ -2,13 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/coding-standards/compare/0.4.1...HEAD)
-
-## [0.4.1](https://github.com/figuren-theater/coding-standards/compare/0.4.0...0.4.1) - 2023-12-15
-
-### 🚀 Added
-
-- Finetuning the CS output ([#16](https://github.com/figuren-theater/coding-standards/pull/16))
+## [Unreleased](https://github.com/figuren-theater/coding-standards/compare/0.4.0...HEAD)
 
 ## [0.4.0](https://github.com/figuren-theater/coding-standards/compare/0.3.3...0.4.0) - 2023-11-21
 

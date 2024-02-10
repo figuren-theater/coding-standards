@@ -6,7 +6,8 @@
 	"keywords": [
 		"wordpress",
 		"coding-standards",
-		"wpcs"
+		"wpcs",
+		"WordPressVIPMinimum"
 	],
 	"authors": [
 		{
@@ -27,13 +28,13 @@
 		"source": "https://github.com/figuren-theater/coding-standards"
 	},
 	"require": {
+		"automattic/vipwpcs": "^3.0",
 		"ergebnis/composer-normalize": "^2.31",
-		"humanmade/coding-standards": "^1.2"
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"rarst/phpcs-cognitive-complexity": "^0.2.0"
 	},
 	"config": {
 		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true,
-			"ergebnis/composer-normalize": true
 			"dealerdirect/phpcodesniffer-composer-installer": true,
 			"ergebnis/composer-normalize": true
 		}

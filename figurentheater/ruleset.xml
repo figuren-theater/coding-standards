@@ -2,37 +2,82 @@
 <ruleset name="figurentheater">
 	<description>Coding standards for figuren.theater</description>
 
-	<file>.</file>
-
 	<exclude-pattern>*/bin/*</exclude-pattern>
-	<exclude-pattern>*/tests/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
-	<!-- Set a minimum PHP version for PHPCompatibility-->
-	<config name="testVersion" value="7.1-"/>
+	<!-- How to scan -->
+	<!-- Usage instructions: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
+	<!-- Annotated ruleset: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+	<arg name="colors"/>
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="20"/><!-- Enables parallel processing when available for faster results. -->
+	<arg value="s"/>
 
-	<!-- Use HM Coding Standards -->
-	<rule ref="HM" />
+	<!-- Rules: Check PHP version compatibility -->
+	<!-- https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
+	<config name="testVersion" value="8.0-"/>
+	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+	<rule ref="PHPCompatibilityWP"/>
 
-	<rule ref="WordPress-Docs" />
+	<!-- Rules: Humanmade Coding Standards -->
+	<!-- https://github.com/humanmade/coding-standards
+	<rule ref="HM" /> -->
+
+	<!-- Rules: WordPress VIP Coding Standards -->
+	<!-- https://github.com/Automattic/VIP-Coding-Standards -->
 	<rule ref="WordPressVIPMinimum" />
-<!--
-	<rule ref="WordPress-Extra" />
+
+	<!-- Rules: WordPress Coding Standards -->
+	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
+	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
+	<config name="minimum_supported_wp_version" value="6.3"/>
 	<rule ref="WordPress" />
- -->
+	<rule ref="WordPress-Core">
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+	</rule>
+
+	<rule ref="Universal">
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Universal.ControlStructures.IfElseDeclaration.NoNewLine" />
+		<exclude name="Universal.Namespaces.EnforceCurlyBraceSyntax" />
+		<exclude name="Universal.UseStatements.DisallowUseClass.FoundWithoutAlias" />
+		<exclude name="Universal.UseStatements.DisallowUseClass.FromGlobalNamespace" />
+		<exclude name="Universal.UseStatements.DisallowUseFunction.FromGlobalNamespace" />
+	</rule>
+	
+	<rule ref="WordPress-Docs" />
+	<rule ref="WordPress-Extra" />
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
 				<element value="figurentheater"/>
+				<element value="default"/>
 			</property>
 		</properties>
 	</rule>
 
-	<!-- Prevent deprecation notice when the sniff is not explicitely included. -->
-	<!-- 11.11.2019: 2.2.0: "The deprecated sniff will be removed in WPCS 3.0.0." ;) -->
-	<rule ref="WordPress.WP.TimezoneChange.DeprecatedSniff">
-		<severity>0</severity>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="ft_"/>
+				<element value="FT_"/>
+				<element value="Figuren_Theater"/>
+				<element value="__NAMESPACE__"/>
+			</property>
+
+		</properties>
 	</rule>
+
+	<!-- Allow backslashes in hook names -->
+	<rule ref="WordPress.NamingConventions.ValidHookName">
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
+	</rule>
+
+	<!-- Rules: Cognitive Complexity metric by SonarSource -->
+	<!-- https://github.com/Rarst/phpcs-cognitive-complexity -->
+	<rule ref="CognitiveComplexity"/>
 
 </ruleset>
