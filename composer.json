@@ -29,7 +29,7 @@
 	},
 	"require": {
 		"automattic/vipwpcs": "^3.0",
-		"ergebnis/composer-normalize": "^2.31",
+		"ergebnis/composer-normalize": "^2.47",
 		"phpcompatibility/phpcompatibility-wp": "*",
 		"rarst/phpcs-cognitive-complexity": "^0.2.0"
 	},
